@@ -1,6 +1,7 @@
+using Gtk;
+using Gdk;
 
-
-public class AppWindow : Gtk.Window {
+	public class AppWindow : Gtk.Window {
 
 		construct { //This is the default constructor for the new window.
 
