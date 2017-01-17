@@ -48,5 +48,6 @@ pkg_check_modules(DEPS REQUIRED ${MODULES_TO_CHECK})
 
 
 add_subdirectory(po)
+add_subdirectory(data/icons)
 add_subdirectory(src)
 
