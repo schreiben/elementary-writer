@@ -26,5 +26,7 @@ vala_binary: src/elementary-writing
 
 *doc: doc
 
-*full_icon: Hicolor Applications data/icons/tw.svg
+*desktop: data/elementary-writing.desktop
+
+*full_icon: Hicolor Applications data/icons/elementary-writing.svg
 

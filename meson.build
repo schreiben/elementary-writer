@@ -18,7 +18,8 @@ meson.add_install_script(join_paths(meson.current_source_dir(),'meson_scripts','
 
 meson.add_install_script(join_paths(meson.current_source_dir(),'meson_scripts','install_data.sh'),join_paths(get_option('prefix'),get_option('datadir'),'doc'),join_paths(meson.current_source_dir(),'doc','','*'))
 
-install_data('data/icons/tw.svg',install_dir: join_paths(get_option('prefix'),get_option('datadir'),'icons','hicolor/scalable/apps'))
+install_data('data/elementary-writing.desktop',install_dir:join_paths(get_option('prefix'),get_option('datadir'),'applications'))
+install_data('data/icons/elementary-writing.svg',install_dir: join_paths(get_option('prefix'),get_option('datadir'),'icons','hicolor/scalable/apps'))
 cfg_elementary-writing = configuration_data()
 cfg_elementary-writing.set('DATADIR', join_paths(get_option('prefix'),get_option('datadir')))
 cfg_elementary-writing.set('PKGDATADIR', join_paths(get_option('prefix'),get_option('datadir'),'elementary-writing'))

@@ -1,0 +1,22 @@
+[Desktop Entry]
+Type=Application
+Name=Elementary Writing
+Comment=A text editor for writers
+GenericName=Elementary Writing
+Exec=elementary-writing %U
+Icon=elementary-writing
+Terminal=false
+Categories=GNOME;GTK;Utility;TextEditor;
+Keywords=Notepad;Plain;
+MimeType=text/plain;
+StartupNotify=true
+Actions=NewDocument;AboutDialog;
+X-GNOME-Gettext-Domain=elemetary-writing
+
+[Desktop Action NewDocument]
+Name=New Document
+Exec=elementary-writing --new-document
+
+[Desktop Action AboutDialog]
+Exec=elementary-writing --about
+_Name=About Elementary Writing
