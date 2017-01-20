@@ -18,7 +18,7 @@ using Gdk;
 
 			// Font
 			var font_description = new Pango.FontDescription();
-      font_description.set_family("Libre Baskerville");
+      font_description.set_family("Baskervald ADF Std");
       font_description.set_size((int)(14 * Pango.SCALE));
 			text_view.override_font(font_description);
 
