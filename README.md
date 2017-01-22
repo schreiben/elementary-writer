@@ -1,2 +1,2 @@
-# elementary-writer
-Gtk text editing app for writers. It is optimized for Elementary OS.
+# elementary-writing
+An app for text writers.
