@@ -22,19 +22,13 @@ include (ValaVersion)
 ensure_vala_version ("0.34" MINIMUM)
 include (ValaPrecompile)
 
-set (VALA_PACKAGES ${VALA_PACKAGES} atk)
-set (VALA_PACKAGES ${VALA_PACKAGES} cairo)
-set (VALA_PACKAGES ${VALA_PACKAGES} gdk-3.0)
-set (VALA_PACKAGES ${VALA_PACKAGES} gdk-pixbuf-2.0)
 set (VALA_PACKAGES ${VALA_PACKAGES} gio-2.0)
 set (VALA_PACKAGES ${VALA_PACKAGES} glib-2.0)
 set (VALA_PACKAGES ${VALA_PACKAGES} gobject-2.0)
-set (VALA_PACKAGES ${VALA_PACKAGES} gtk+-3.0)
-set (VALA_PACKAGES ${VALA_PACKAGES} pango)
-set (VALA_PACKAGES ${VALA_PACKAGES} pangocairo)
-set (VALA_PACKAGES ${VALA_PACKAGES} x11)
 
 set (APP_SOURCES ${APP_SOURCES} ${CMAKE_CURRENT_BINARY_DIR}/Config.vala)
+set (APP_SOURCES ${APP_SOURCES} Editor.vala)
+set (APP_SOURCES ${APP_SOURCES} MainWindow.vala)
 set (APP_SOURCES ${APP_SOURCES} elementary-writing.vala)
 
 
