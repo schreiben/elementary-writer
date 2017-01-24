@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+	<enum id="elementary-writing-window-states">
+		<value nick="Normal" value="0" />
+		<value nick="Maximized" value="1" />
+		<value nick="Fullscreen" value="2" />
+	</enum>
+	<schema path="/org/schreiben/elementary-writing/saved-state/" id="org.schreiben.elementary-writing.saved-state" gettext-domain="elementary-writing">
+		<key name="window-state" enum="elementary-writing-window-states">
+			<default>"Normal"</default>
+			<summary>The saved state of the window.</summary>
+			<description>The saved state of the window.</description>
+		</key>
+		<key name="window-width" type="i">
+			<default>850</default>
+			<summary>The saved width of the window.</summary>
+			<description>The saved width of the window. Must be greater than 700, or it will not take effect.</description>
+		</key>
+		<key name="window-height" type="i">
+			<default>550</default>
+			<summary>The saved height of the window.</summary>
+			<description>The saved height of the window. Must be greater than 400, or it will not take effect.</description>
+		</key>
+		<key name="window-x" type="i">
+			<default>250</default>
+			<summary></summary>
+			<description></description>
+		</key>
+		<key name="window-y" type="i">
+			<default>250</default>
+			<summary></summary>
+			<description></description>
+		</key>
+	</schema>
+	<schema path="/org/schreiben/elementary-writing/settings/" id="org.schreiben.elementary-writing.settings" gettext-domain="elementary-writing">
+		<key name="opened-files" type="as">
+			<default>[]</default>
+			<summary>Files opened in the previously session of Elementary Writing</summary>
+			<description>It is used to open the files opened in the last Elementary Writing session</description>
+		</key>
+		<key name="autosave" type="b">
+			<default>true</default>
+			<summary>Autosave edited files</summary>
+			<description>Autosave edited files.</description>
+		</key>
+		<key name="highlight-current-line" type="b">
+			<default>false</default>
+			<summary>Highlight Current Line</summary>
+			<description>Whether Elementary Writing should highlight the current line.</description>
+		</key>
+		<key name="indent-width" type="i">
+			<default>40</default>
+			<summary>Indent width</summary>
+			<description>Specifies the indent width of paragraphs.</description>
+		</key>
+		<key name="use-system-font" type="b">
+			<default>true</default>
+			<summary>Use system font</summary>
+			<description>Whether Elementary Writing should use the default system font</description>
+		</key>
+		<key name="font" type="s">
+			<default>'Droid Sans Mono 10'</default>
+			<summary>Preferred Font</summary>
+			<description>Set the preferred font.</description>
+		</key>
+		<key name="style-scheme" type="s">
+			<default>'classic'</default>
+			<summary>Preferred Style Scheme</summary>
+			<description>Set the preferred style scheme.</description>
+		</key>
+	</schema>
+</schemalist>
