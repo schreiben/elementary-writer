@@ -22,6 +22,8 @@ include (ValaVersion)
 ensure_vala_version ("0.34" MINIMUM)
 include (ValaPrecompile)
 
+set (VALA_PACKAGES ${VALA_PACKAGES} granite-0.3.0)
+set (VALA_PACKAGES ${VALA_PACKAGES} gtk+-3.0)
 set (VALA_PACKAGES ${VALA_PACKAGES} gio-2.0)
 set (VALA_PACKAGES ${VALA_PACKAGES} glib-2.0)
 set (VALA_PACKAGES ${VALA_PACKAGES} gobject-2.0)

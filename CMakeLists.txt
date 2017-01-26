@@ -32,6 +32,8 @@ endif()
 
 find_package(PkgConfig)
 
+set(MODULES_TO_CHECK ${MODULES_TO_CHECK} granite-0.3.0)
+set(MODULES_TO_CHECK ${MODULES_TO_CHECK} gtk+-3.0)
 set(MODULES_TO_CHECK ${MODULES_TO_CHECK} gio-2.0)
 set(MODULES_TO_CHECK ${MODULES_TO_CHECK} glib-2.0)
 set(MODULES_TO_CHECK ${MODULES_TO_CHECK} gobject-2.0)
