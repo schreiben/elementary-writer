@@ -22,7 +22,6 @@ namespace ElementaryWriting {
     // Settings
     public SavedState saved_state;
     public Settings settings;
-    public ServicesSettings services;
 
     public class ElementaryWritingApp : Granite.Application {
         public string app_cmd_name { get { return _app_cmd_name; } }

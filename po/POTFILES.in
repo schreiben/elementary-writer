@@ -1,3 +1,4 @@
 src/Editor.vala
 src/MainWindow.vala
+src/Settings.vala
 src/elementary-writing.vala

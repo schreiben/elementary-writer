@@ -2,7 +2,7 @@ project('elementary-writing',['c','vala'])
 
 add_global_arguments('-DGETTEXT_PACKAGE="elementary-writing"',language: 'c')
 
-granite_0_3_0_dep = dependency('granite-0.3.0')
+granite_dep = dependency('granite')
 gtk_3_0_dep = dependency('gtk+-3.0')
 gio_2_0_dep = dependency('gio-2.0')
 glib_2_0_dep = dependency('glib-2.0')
@@ -27,7 +27,7 @@ cfg_elementary-writing.set('TESTSRCDIR', meson.current_source_dir())
 
 cfgfile_1 = configure_file(input: 'src/Config.vala.base',output: 'Config_1.vala',configuration: cfg_elementary-writing)
 
-elementary-writing_deps = [granite_0_3_0_dep]
+elementary-writing_deps = [granite_dep]
 elementary-writing_deps += [gtk_3_0_dep]
 elementary-writing_deps += [gio_2_0_dep]
 elementary-writing_deps += [glib_2_0_dep]
@@ -35,6 +35,7 @@ elementary-writing_deps += [gobject_2_0_dep]
 elementary-writing_sources = [cfgfile_1]
 elementary-writing_sources += ['src/Editor.vala']
 elementary-writing_sources += ['src/MainWindow.vala']
+elementary-writing_sources += ['src/Settings.vala']
 elementary-writing_sources += ['src/elementary-writing.vala']
 
 executable('elementary-writing',elementary-writing_sources,dependencies: elementary-writing_deps,install: true)
