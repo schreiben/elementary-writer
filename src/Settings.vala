@@ -1,4 +1,4 @@
-ElementaryWriting// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
+// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /***
   BEGIN LICENSE
 
