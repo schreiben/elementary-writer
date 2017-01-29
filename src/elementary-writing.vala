@@ -83,7 +83,6 @@ namespace ElementaryWriting {
             default_font = "Baskervald ADF Std";
             saved_state = new SavedState ();
             settings = new Settings ();
-            services = new ServicesSettings ();
 
             // Init data home folder for unsaved text files
             _data_home_folder_unsaved = Environment.get_user_data_dir () + "/" + exec_name + "/unsaved/";
@@ -242,7 +241,8 @@ namespace ElementaryWriting {
 
         protected override void open (File[] files, string hint) {
             foreach (var file in files) {
-                var doc = new MainWindow (file);
+                var win = new MainWindow (this);
+				win.read_from_file(file);
             }
         }
 

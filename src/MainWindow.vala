@@ -22,6 +22,12 @@ namespace ElementaryWriting {
 
 	public class MainWindow : Gtk.Window {
 
+		public ElementaryWritingApp app { get; set; }
+
+		public MainWindow(ElementaryWritingApp app) {
+			this.app = app;
+		}
+
 		construct {
 			this.title = "Elementary Writing";
 			this.set_default_size(800, 800);
@@ -30,6 +36,14 @@ namespace ElementaryWriting {
 			this.set_titlebar(this.header());
 			this.set_size_request(600, 400);
 			this.add(new Editor());
+		}
+
+		public void read_from_file(File file) {
+
+		}
+
+		public void restore_opened_documents() {
+
 		}
 
 		private Gtk.HeaderBar header() {

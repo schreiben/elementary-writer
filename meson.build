@@ -4,6 +4,7 @@ add_global_arguments('-DGETTEXT_PACKAGE="elementary-writing"',language: 'c')
 
 granite_dep = dependency('granite')
 gtk_3_0_dep = dependency('gtk+-3.0')
+posix_dep = dependency('posix')
 gio_2_0_dep = dependency('gio-2.0')
 glib_2_0_dep = dependency('glib-2.0')
 gobject_2_0_dep = dependency('gobject-2.0')
@@ -29,6 +30,7 @@ cfgfile_1 = configure_file(input: 'src/Config.vala.base',output: 'Config_1.vala'
 
 elementary-writing_deps = [granite_dep]
 elementary-writing_deps += [gtk_3_0_dep]
+elementary-writing_deps += [posix_dep]
 elementary-writing_deps += [gio_2_0_dep]
 elementary-writing_deps += [glib_2_0_dep]
 elementary-writing_deps += [gobject_2_0_dep]
